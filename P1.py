@@ -1,21 +1,24 @@
-#DI
-class CNFSatisfiablity():
-    def init_(self,variables,symbols):
-        self.variables = (a,b,c,d,e,f)
-        a = 1
-        b = 0
-        c = 1
-        d = 0
-        e = 1
-        f = 0
-class Paser():
-    def init_(self,filename,strings):
+class CNFSatisfiablity(object):
+    def init_(self,expression):
+        self.variables = ["a","b","c","d","e","f"]
+        self.symbols =["!","|","&"]
+        self.values = [1,1,1,1,1,1]
+        self.literals = []
+        for character in expression:
+            if character not in self.symbols:
+                self.literals.append(character)
+                self.literals = list(set(self.literals))
+                self.literals.sort()
+        for character in self.literals:
+        for value in self.values:
+             character = value
+        print(self.literals)
+class Paser(object):
+    def init_(self,filename):
         self.file = filename
-        self.strings=[]
-    def parse_(self,filename)
-#open and read from file convert all lines of text from the file to a array of strings
-        filename = open("CNFSatisfiablity",'r')
-        strings = filename.readlines()
-        filename.close()
-        print(strings)
+        self.file_to_open = open(self.file,"r")
+        self.lines = file_to_open.readlines()
+a=Paser("CNFSatisfiablity.txt")
+for line in a.lines
+    j=expression(line)
 
