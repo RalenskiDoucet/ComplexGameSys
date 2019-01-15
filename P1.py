@@ -1,15 +1,16 @@
 #this class will be used for holding the symbols and other things for the expression.
 class CNFSatisfiablityExpression(object):
-    def init_(self,expression):
+    def __init__(self,expression):
 
         #A empty list for literals.
         self.literals = ["a","b","c","d","e","f"]
         #creates a list for values.
         self.values = [1,1,1,1,1,1]
+        self.clauses= expression.split()
 
         #A list for symbols used in the expression
 
-        self.symbols =["!","|","+","*"]
+        self.symbols ={"!","|","+","*"}
 
         self.clauses = expression.split("*")
 
@@ -24,16 +25,19 @@ class CNFSatisfiablityExpression(object):
         print(self.literals)
 
 #this class will read from the file.
-class Paser(object):
-    def init_(self,filename):
-        self.filename
+class Parser(object):
+    def __init__(self,filename):
         self.file = filename
-        self.file_to_open = open(file,"r")
+        self.file_to_open = open(self.file,"r")
         self.lines = self.file_to_open.readlines()
-    def openFile(self):
-        self.filename=("CNFSatisfiablity.txt")
-n  = Paser()
 
-    for line in n.lines:
-    j = CNFSatisfiablityExpression(line)
-    
+#needs to be able to evaluate the expression to be true of false  based on the symbols.
+#needs to take in the expression as an argument.
+
+
+n  = Parser("CNFSatisfiablity.txt")
+for line in n.lines:
+    n = CNFSatisfiablityExpression(line)
+    eval(n,n.symbols,)
+ 
+
