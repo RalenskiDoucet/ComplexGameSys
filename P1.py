@@ -38,6 +38,5 @@ class Parser(object):
 n  = Parser("CNFSatisfiablity.txt")
 for line in n.lines:
     n = CNFSatisfiablityExpression(line)
-    eval(n,n.symbols,)
- 
-
+    j = CNFSatisfiablityExpression("line")
+    k = eval("j")

@@ -1,3 +1,4 @@
+#1-15-19
 #Implement a function that takes as input three variables, and returns the largest of the three. Do this without using the Python max() function!
 #The goal of this exercise is to think about some internals that Python normally takes care of for us. All you need is some variables and if statements!
 #def
@@ -20,17 +21,40 @@
 #List pro
 
 
-def common_elements(list1, list2):
-    temp=[]
-
-    for element in list1:
-        if element in list2:
-            temp.append(element)
-    return temp
+#def common_elements(list1, list2):
+#   temp=[]
+#  for element in list1:
+#     if element in list2:
+    #        temp.append(element)
+    #return temp
     #print (temp[])
 #maybe
 #def common_elements(list1, list2): return [element for element in list1 if element in list2]
 
-a=[1,2,3,4,5,645,74,99,22,1997,42,69,96]
-b=[1,2,3,4,5,72,23,754,100,1997,46,58,196]
-common_elements(a,b)
+#a=[1,2,3,4,5,645,74,99,22,1997,42,69,96]
+#b=[1,2,3,4,5,72,23,754,100,1997,46,58,196]
+#common_elements(a,b)
+
+
+
+#1-17-19
+
+#Create a function that will take as input a list of numbers.
+#it will output a bitstring in binary that will.
+#represent whether the element in the list was even or odd.
+#def Create_List (listA[]):
+#    for listA.output.bitstring.binary()
+#
+#      if listA.element.returns.odd.numbers
+#       print ("Odd numbers returned")
+
+#        if listA.element.returns.even.numbers
+ #       print("Even numbers returned")
+
+
+#Create a function that will determine if the input value is even or odd. return 1 for odd 0 for even
+def oddOReven(input_number):
+    if input_number = even.number
+        print("even number was entered")
+    if input_number.returns.odd.number
+        print("odd number was entered")
