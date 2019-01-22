@@ -18,11 +18,19 @@ class CNFSatisfiablityExpression(object):
             if character not in self.symbols:
                 self.literals.append(character)
                 self.literals = list(set(self.literals))
-                self.literals.sort()
+                self.literals = expression.replace(self.symbols)
         for character in self.literals:
             for value in self.values:
                 character = value
         print(self.literals)
+
+    def gen_population(self, size):
+        for i in range(0, size):
+            values = []
+        for j in self.expression:
+            values.append(random.randint(0,1))
+            self.population.append()
+            print(self.population)
 
 #this class will read from the file.
 class Parser(object):
@@ -38,5 +46,4 @@ class Parser(object):
 n  = Parser("CNFSatisfiablity.txt")
 for line in n.lines:
     n = CNFSatisfiablityExpression(line)
-    j = CNFSatisfiablityExpression("line")
-    k = eval("j")
+  
