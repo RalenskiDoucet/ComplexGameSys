@@ -1,3 +1,4 @@
+import math
 #1-15-19
 #Implement a function that takes as input three variables, and returns the largest of the three. Do this without using the Python max() function!
 #The goal of this exercise is to think about some internals that Python normally takes care of for us. All you need is some variables and if statements!
@@ -53,8 +54,25 @@
 
 
 #Create a function that will determine if the input value is even or odd. return 1 for odd 0 for even
-def oddOReven(input_number):
-    if input_number = even.number
-        print("even number was entered")
-    if input_number.returns.odd.number
-        print("odd number was entered")
+#def oddOReven(input_number):
+#  if input_number = even.number
+#       print("even number was entered")
+# if input_number.returns.odd.number
+#    print("odd number was entered")
+
+
+#1-24-19
+
+#Morning problem: Create a function.
+#arguments: number of slices and radius.
+#returns: a list of tuples .
+#Description: returns a list of (,) with respect to the unit circle given number of slices and radiuse.
+#estimated time to complete: 30 m.
+def function(slices,radius)
+    points = []
+    _angle = 0
+    for slice in range(slices):
+        _angle +=slice/(1*math.pi)
+        circle=(radius * math.cos(angle),raduis * math.sin(angle)
+        return points
+

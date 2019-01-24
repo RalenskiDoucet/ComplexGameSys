@@ -1,4 +1,5 @@
 import random
+from ExpressionAndParser import CNFSatisfiablityExpression
 class Gene():
     def __init__(self, values):
         self.values = values
@@ -19,7 +20,13 @@ class Gene():
 
         return mutated_gene
 
-
+    def gen_population(self, size):
+        for i in range(0, size):
+            values = []
+        for j in self.expression:
+            values.append(random.randint(0,1))
+            self.population.append()
+            print(self.population)
     def cross_over(self, genNumeOne, geneNumTwo, pivot):
         newGene = (geneNumOne[pivot:] + geneNumTwo[:pivot])
         return (newGene)
