@@ -22,7 +22,8 @@ class Gene():
         return mutated_gene
 
     def gen_population(self, size):
-        for i in range(0, size):
+  
+        for i in range(0, len(size)):
             values = []
         for j in self.expression:
             values.append(random.randint(0,1))
@@ -35,5 +36,5 @@ a = Parser("CNFSatisfiablity.txt")
 for line in a.lines:
     a = CNFSatisfiablityExpression(line)
 f= Gene(a)
-f.gen_population(a.values.count)
+f.gen_population(a.values)
 f.mutate(a.values)
