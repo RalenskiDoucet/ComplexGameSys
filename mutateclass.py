@@ -1,5 +1,6 @@
 import random
 from ExpressionAndParser import CNFSatisfiablityExpression
+from ExpressionAndParser import Parser
 class Gene():
     def __init__(self, values):
         self.values = values
@@ -30,3 +31,9 @@ class Gene():
     def cross_over(self, genNumeOne, geneNumTwo, pivot):
         newGene = (geneNumOne[pivot:] + geneNumTwo[:pivot])
         return (newGene)
+a = Parser("CNFSatisfiablity.txt")
+for line in a.lines:
+    a = CNFSatisfiablityExpression(line)
+f= Gene(a)
+f.gen_population(a.values.count)
+f.mutate(a.values)

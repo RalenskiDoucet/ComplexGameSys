@@ -50,7 +50,7 @@ import math
 #       print ("Odd numbers returned")
 
 #        if listA.element.returns.even.numbers
- #       print("Even numbers returned")
+#       print("Even numbers returned")
 
 
 #Create a function that will determine if the input value is even or odd. return 1 for odd 0 for even
