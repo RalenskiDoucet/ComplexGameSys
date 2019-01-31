@@ -5,23 +5,18 @@ class CNFSatisfiablityExpression(object):
     def __init__(self,expression):
 
         #A empty list for literals.
-        self.literals = ["a","b","c","d","e","f"]
+        self.literals = []
         #creates a list for values.
-        self.values = [1,0,1,0,1,0]
-        self.clauses= expression.split()
-
+        self.speacial_literals = []
+        self.values = []
         #A list for symbols used in the expression
-
-        self.symbols = ["!","|","*"]
+        self.symbols = ["!","|","*","(",")"]
         self.clauses = expression.split("*")
-
         for character in expression:
             if character not in self.symbols:
-                self.literals.append(character)
-                self.literals = list(list(self.literals))
-        for character in self.literals:
-            for value in self.values:
-                character = value
+                self.literals.append(character)                
+                self.literals.__contains__("a")
+                
         print(self.literals)
 
 

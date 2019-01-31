@@ -22,7 +22,6 @@ class Gene():
         return mutated_gene
 
     def gen_population(self, size):
-  
         for i in range(0, len(size)):
             values = []
         for j in self.expression:
@@ -32,7 +31,7 @@ class Gene():
     def cross_over(self, genNumeOne, geneNumTwo, pivot):
         newGene = (geneNumOne[pivot:] + geneNumTwo[:pivot])
         return (newGene)
-a = Parser("CNFSatisfiablity.txt")
+a =  Parser("CNFSatisfiablity.txt")
 for line in a.lines:
     a = CNFSatisfiablityExpression(line)
 f= Gene(a)
