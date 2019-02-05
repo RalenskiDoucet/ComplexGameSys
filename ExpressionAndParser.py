@@ -15,7 +15,8 @@ class CNFSatisfiablityExpression(object):
         for character in expression:
             if character not in self.symbols:
                 self.literals.append(character)                
-                self.literals.__contains__("a")
+                self.literals(character.expression.true)
+                print("true")
                 
         print(self.literals)
 
