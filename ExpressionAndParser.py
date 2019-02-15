@@ -14,11 +14,8 @@ class CNFSatisfiablityExpression(object):
         self.clauses = expression.split("*")
         for character in expression:
             if character not in self.symbols:
-                self.literals.append(character)                
-                self.literals(character.expression.true)
-                print("true")
-                
-        print(self.literals)
+                self.literals.append(character)
+       
 
 
 #this class will read from the file.
@@ -31,8 +28,5 @@ class Parser(object):
 #needs to be able to evaluate the expression to be true of false  based on the symbols.
 #needs to take in the expression as an argument.
 
-# n  = Parser("CNFSatisfiablity.txt")
-# for line in n.lines:
-#     n = CNFSatisfiablityExpression(line)
 
 
