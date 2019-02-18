@@ -28,25 +28,25 @@ class Gene():
     def gene_info(self):
         return self.info
 
-    def mutate(self, gene):
-        '''input: string with format of 111000 or any sequence of 1s and 0s'''
-        '''output: string "mutated"'''
-        '''example: if input is 111111 and mutation rate is set to 1 then output would be 000000'''
-        '''example: mutate("111111", 1) => "000000"'''
-        '''example: mutate("000000", 0) => "111111"'''
-        mutated_gene = []
-        mutation_chance = .25
+    #def mutate(self, gene):
+    #    '''input: string with format of 111000 or any sequence of 1s and 0s'''
+    #    '''output: string "mutated"'''
+    #    '''example: if input is 111111 and mutation rate is set to 1 then output would be 000000'''
+    #    '''example: mutate("111111", 1) => "000000"'''
+    #    '''example: mutate("000000", 0) => "111111"'''
+    #    mutated_gene = []
+    #    mutation_chance = .25
 
-        for i in gene:
-            if random.random() < mutation_chance:
-                if i == 1:
-                    mutated_gene.append(0)
-                else:
-                    mutated_gene.append(1)
-            else:
-                mutated_gene.append(i)
+    #    for i in gene:
+    #        if random.random() < mutation_chance:
+    #            if i == 1:
+    #               mutated_gene.append(0)
+    #            else:
+    #                mutated_gene.append(1)
+    #        else:
+    #            mutated_gene.append(i)
 
-        return mutated_gene
+    #   return mutated_gene
 
     def gen_population(self, size):
         for i in range(0, len(Gene)):
